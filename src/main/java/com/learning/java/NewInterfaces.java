@@ -18,16 +18,24 @@ public class NewInterfaces {
             System.out.println("12345");
         };
         tc2.printCurrentTime();
+
+        // Only way to call static method from interface
+        System.out.println(TimeClient.currentTime());
     }
 
     static interface TimeClient {
         default void printCurrentTime() {
-            System.out.println(System.currentTimeMillis());
+            System.out.println(currentTime());
+        }
+
+        static long currentTime() {
+            return System.currentTimeMillis();
         }
     }
 
-    static interface CustomTimeClient extends TimeClient{
+    interface CustomTimeClient extends TimeClient{
         void printCurrentTime();
 
     }
+
 }
