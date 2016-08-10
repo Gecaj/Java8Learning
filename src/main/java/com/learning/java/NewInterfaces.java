@@ -23,7 +23,7 @@ public class NewInterfaces {
         System.out.println(TimeClient.currentTime());
     }
 
-    static interface TimeClient {
+    interface TimeClient {
         default void printCurrentTime() {
             System.out.println(currentTime());
         }
@@ -33,7 +33,7 @@ public class NewInterfaces {
         }
     }
 
-    interface CustomTimeClient extends TimeClient{
+    static interface CustomTimeClient extends TimeClient{
         void printCurrentTime();
 
     }

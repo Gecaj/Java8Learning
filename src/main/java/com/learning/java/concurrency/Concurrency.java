@@ -1,4 +1,4 @@
-package com.learning.java;
+package com.learning.java.concurrency;
 
 /**
  * Created by Jacek Cislo (jacek.cislo@nokia.com)
