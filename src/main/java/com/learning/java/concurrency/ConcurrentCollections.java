@@ -26,5 +26,16 @@ public class ConcurrentCollections {
         System.out.println(deque.peek());
         System.out.println(deque.pop());
 
+        Map<String, Object> foodData = new ConcurrentHashMap<String, Object>();
+        foodData.put("penguin", 1);
+        foodData.put("flamingo", 2);
+        for(String key: foodData.keySet()) {
+            System.out.println(foodData.get(key));
+            foodData.remove(key);
+            System.out.println("fooData size: " + foodData.keySet().size());
+        }
+        for(String key: foodData.keySet())
+            System.out.println(foodData.get(key));
+
     }
 }
