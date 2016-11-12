@@ -6,12 +6,12 @@ public class Task3 {
         if (Q == 0) {
             return 1;
         }
-        for (int i = (int) Math.sqrt(Q); i > 0 ; i--) {
-            if (i*i == Q) {
-                qRoundPairs+=4;
+        for (int i = (int) Math.sqrt(Q); i > 0; i--) {
+            if (i * i == Q) {
+                qRoundPairs += 4;
             }
             int j = Q - i * i;
-            if (hasSquareRoot(j))  {
+            if (hasSquareRoot(j)) {
                 qRoundPairs += 4;
             }
         }
