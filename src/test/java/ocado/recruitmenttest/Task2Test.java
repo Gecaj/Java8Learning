@@ -10,7 +10,8 @@ public class Task2Test {
 
     @Test
     public void shouldCheckSolutionCorrectly() {
-        assertThat(primes.solution(1, 60)).isEqualTo(18);
+        assertThat(primes.solution(1, 60)).isEqualTo(17);
         assertThat(primes.solution(11, 19)).isEqualTo(4);
+        assertThat(primes.solution(1, 7)).isEqualTo(4);
     }
 }

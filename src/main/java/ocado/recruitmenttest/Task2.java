@@ -12,6 +12,9 @@ public class Task2 {
     }
 
     private boolean isPrime(int n) {
+        if (n == 1) {
+            return false;
+        }
         for (int i = (int)Math.sqrt(n); i > 1; i--) {
             if (n % i == 0) {
                 return false;
