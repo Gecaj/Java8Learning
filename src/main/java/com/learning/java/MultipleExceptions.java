@@ -62,3 +62,4 @@ public class MultipleExceptions {
     static class SecondException extends Exception { }
 
 }
+
